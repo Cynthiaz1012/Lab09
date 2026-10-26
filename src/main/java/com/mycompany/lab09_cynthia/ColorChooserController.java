@@ -6,7 +6,11 @@ import javafx.scene.control.TextField;
 import javafx.scene.paint.Color;
 import javafx.scene.shape.Rectangle;
 
-public class PrimaryController {
+
+/**
+ * Github link: https://github.com/BoomEAE/Gene-Analyser-App
+ */
+public class ColorChooserController {
 
     @FXML
     private Slider alphaSlider;
@@ -52,21 +56,24 @@ public class PrimaryController {
         blue = blueSlider.getValue();
         alpha = alphaSlider.getValue();
 
-
         redSlider.valueProperty().addListener((observable, oldValue, newValue) -> {
             red = newValue.doubleValue();
+            updateColor();
         });
 
         greenSlider.valueProperty().addListener((observable, oldValue, newValue) -> {
             green = newValue.doubleValue();
+            updateColor();
         });
 
         blueSlider.valueProperty().addListener((observable, oldValue, newValue) -> {
             blue = newValue.doubleValue();
+            updateColor();
         });
 
         alphaSlider.valueProperty().addListener((observable, oldValue, newValue) -> {
             alpha = newValue.doubleValue();
+            updateColor();
         });
     }
     
