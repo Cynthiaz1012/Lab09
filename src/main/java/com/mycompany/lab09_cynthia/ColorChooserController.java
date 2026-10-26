@@ -29,5 +29,10 @@ public class PrimaryController {
 
     @FXML
     private TextField redTextField;
+    
+    private int red;
+    private int green;
+    private int blue;
+    private double alpha;
 
 }
