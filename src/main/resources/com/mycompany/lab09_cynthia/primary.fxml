@@ -31,7 +31,7 @@
         </rowConstraints>
          <children>
             <Circle fill="DODGERBLUE" radius="40.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="3" GridPane.rowSpan="2147483647" />
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="100.0" stroke="BLACK" strokeType="INSIDE" width="100.0" GridPane.columnIndex="3" GridPane.rowSpan="2147483647" />
+            <Rectangle fx:id="colorRectangle" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="100.0" stroke="BLACK" strokeType="INSIDE" width="100.0" GridPane.columnIndex="3" GridPane.rowSpan="2147483647" />
             <Label text="Red" />
             <Label text="Green" GridPane.rowIndex="1" />
             <Label text="Blue" GridPane.rowIndex="2" />
