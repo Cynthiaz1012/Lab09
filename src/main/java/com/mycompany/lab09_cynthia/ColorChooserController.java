@@ -47,6 +47,22 @@ public class PrimaryController {
     blue = blueSlider.getValue();
     alpha = alphaSlider.getValue();
     
+    
+    redSlider.valueProperty().addListener((observable, oldValue, newValue) -> {
+        red = newValue.doubleValue();
+    });
+
+    greenSlider.valueProperty().addListener((observable, oldValue, newValue) -> {
+        green = newValue.doubleValue();
+    });
+
+    blueSlider.valueProperty().addListener((observable, oldValue, newValue) -> {
+        blue = newValue.doubleValue();
+    });
+
+    alphaSlider.valueProperty().addListener((observable, oldValue, newValue) -> {
+        alpha = newValue.doubleValue();
+    });
 }
 
 }
