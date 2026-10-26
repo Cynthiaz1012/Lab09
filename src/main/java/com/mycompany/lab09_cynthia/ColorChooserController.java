@@ -30,9 +30,9 @@ public class PrimaryController {
     @FXML
     private TextField redTextField;
     
-    private int red;
-    private int green;
-    private int blue;
+    private double red;
+    private double green;
+    private double blue;
     private double alpha;
     
     @FXML
@@ -42,6 +42,11 @@ public class PrimaryController {
     blueTextField.textProperty().bind(blueSlider.valueProperty().asString("%.0f"));
     alphaTextField.textProperty().bind(alphaSlider.valueProperty().asString("%.2f"));
 
+    red = redSlider.getValue();
+    green = greenSlider.getValue();
+    blue = blueSlider.getValue();
+    alpha = alphaSlider.getValue();
+    
 }
 
 }
